@@ -36,6 +36,12 @@ $ docker kill [ idContainer ]
 ```
 ![life-cycle.png](life-cycle.png)
 
+### PULL OWN PROJECT TO DOCKER HUB
+```
+docker pull [ idUser/idProject ]
+```
+
+
 Now complex app, with independent database container,
 for example, with postgreSQL.
 https://hub.docker.com/_/postgres
@@ -43,7 +49,6 @@ https://hub.docker.com/_/postgres
 ```
 $ docker pull postgres
 ```
-###PUSH OWN PROJECT TO DOCKER HUB
 Now we have our database Image,
 Afterwards, we're going to create our database container
 with our name ( app-db ) and detach mode ( -d )
